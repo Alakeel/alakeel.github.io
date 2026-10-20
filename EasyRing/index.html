@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EasyRing — every file action, one gesture away</title>
-<meta name="description" content="Convert, compress, resize and crop any file on your Mac with one gesture. Private by design: nothing is uploaded.">
+<meta name="description" content="Convert, compress, resize and crop any file with one gesture, right from Finder. Private by design: nothing is uploaded. Windows coming soon.">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="stylesheet" href="style.css">
@@ -18,10 +18,12 @@
 </header>
 <section class="hero">
   <div class="hero-copy">
-    <span class="eyebrow">Free for Mac · Windows soon</span>
     <h1>Every file action,<br>one gesture away</h1>
-    <p>Select files in Finder, hold a key, point at what you want and let go. Convert, compress, resize, crop and more, right where your files are.</p>
-    <a class="store-btn" href="https://apps.apple.com/app/id6824989710"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.6-1-2.6-3.9zM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>Download on the Mac App Store</a>
+    <p>Select files in Finder (or File Explorer on Windows, coming soon), hold a key, point at what you want and let go. Convert, compress, resize, crop and more, right where your files are.</p>
+    <div class="buttons">
+      <a class="store-btn" href="https://apps.apple.com/app/id6824989710"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.6-1-2.6-3.9zM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>Download on the Mac App Store</a>
+      <span class="store-btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.1 10.4 4v7.1H3zm8.3-1.2L21 2.5v8.6h-9.7zM3 12h7.4v7.1L3 18zm8.3 0H21v8.5l-9.7-1.4z"/></svg>Windows<em>Coming soon</em></span>
+    </div>
     <span class="small">Free for images, PDFs and documents · Pro unlocks video &amp; audio with one purchase</span>
   </div>
   <div class="stage" aria-hidden="true">
@@ -32,10 +34,9 @@
       <div class="file-meta"><strong class="fname"></strong><span class="fsize"></span></div>
       <span class="fstate"></span>
     </div>
-    <div class="keys"><kbd data-key="shift"><b>⇧</b>Shift</kbd><kbd data-key="command"><b>⌘</b>Command</kbd><kbd data-key="control"><b>⌃</b>Control</kbd><span class="hint">hold, point, let go</span></div>
   </div>
 </section>
-<ol class="how"><li><span class="step">1</span><h3>Select</h3><p>Pick files in Finder: one, or a hundred.</p></li><li><span class="step">2</span><h3>Hold</h3><p>Hold ⇧ Shift, ⌘ Command or ⌃ Control. The wheel appears under your cursor.</p></li><li><span class="step">3</span><h3>Let go</h3><p>Point at what you want and release. The result lands right next to the original.</p></li></ol>
+<ol class="how"><li><span class="step">1</span><h3>Select</h3><p>Pick files in Finder or File Explorer: one, or a hundred.</p></li><li><span class="step">2</span><h3>Hold</h3><p>Hold a key like Shift or Control. The wheel appears under your cursor.</p></li><li><span class="step">3</span><h3>Let go</h3><p>Point at what you want and release. The result lands right next to the original.</p></li></ol>
 <script>window.DEMO = {"working": "Converting…", "done": "Saved", "hint": "hold, point, let go"};</script>
 <script src="demo.js"></script>
 <footer><span>© 2026 Abdullah Alakeel</span><a href="privacy/">Privacy</a><a href="support/">Support</a><a href="terms/">Terms</a></footer>

@@ -46,8 +46,6 @@
     $(".fsize").textContent = size;
   };
   const colorOf = (ext) => (SEGS.find(([l]) => l === ext) || [, "#8b8b9a"])[1];
-  const shift = stage.querySelector('kbd[data-key="shift"]');
-  const hold = (on) => shift && shift.classList.toggle("on", on);
   const pick = (i) => {
     segs.forEach((g, k) => g.classList.toggle("on", k === i));
     hub.textContent = i < 0 ? "" : SEGS[i][0];
@@ -63,9 +61,6 @@
     $(".fstate").textContent = "";
     show(s, s.from, s.size, colorOf(s.from));
     pick(-1);
-    hold(false);
-    // Every demo conversion uses the Convert wheel, opened by holding Shift.
-    later(300, () => hold(true));
     later(700, () => pick(target));
     later(1500, () => {
       card.classList.add("working");
@@ -74,7 +69,6 @@
     later(2500, () => {
       card.classList.remove("working");
       card.classList.add("done");
-      hold(false);
       show(s, s.to, s.out, SEGS[target][1]);
       $(".fstate").textContent = `✓ ${text.done}`;
     });
