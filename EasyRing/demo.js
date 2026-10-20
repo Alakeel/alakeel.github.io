@@ -1,6 +1,7 @@
 // The landing page's demo: a key opens its wheel (Shift: Convert, Command:
 // Tools, Control: Apps), the wheel picks an action and the card shows the result.
-// It cycles through the three wheels; clicking a key jumps to that wheel.
+// The keys take turns every 2 seconds, each playing its wheel's next example;
+// clicking a key jumps to that wheel.
 (() => {
   const stage = document.querySelector(".stage");
   if (!stage) return;
@@ -91,12 +92,12 @@
     pick(-1);
     if (s.app) show(word(s.pick), "APP", "", color);
     else show(`${s.name}.${(s.from || s.ext).toLowerCase()}`, s.from || s.ext, s.size, "#8b8b9a");
-    later(500, () => pick(i));
-    later(1300, () => {
+    later(250, () => pick(i));
+    later(650, () => {
       card.classList.add("working");
       $(".fstate").textContent = s.app ? text.opening : wheel === "shift" ? text.converting : text.working;
     });
-    later(2300, () => {
+    later(1250, () => {
       card.classList.remove("working");
       card.classList.add("done");
       if (s.app) $(".fstate").textContent = `✓ ${text.opened}`;
@@ -108,14 +109,15 @@
     });
   }
 
-  // Each wheel plays its steps, then hands over to the next key.
-  function run(id, n = 0) {
+  // Each key plays its wheel's next example, then hands over to the next key.
+  const turn = { shift: 0, command: 0, control: 0 };
+  function run(id) {
     timers.forEach(clearTimeout);
     timers = [];
-    if (wheel !== id) open(id);
-    play(WHEELS[id].steps[n]);
-    const next = n + 1 < WHEELS[id].steps.length ? [id, n + 1] : [ORDER[(ORDER.indexOf(id) + 1) % ORDER.length], 0];
-    later(3800, () => run(...next));
+    open(id);
+    const steps = WHEELS[id].steps;
+    play(steps[turn[id]++ % steps.length]);
+    later(2000, () => run(ORDER[(ORDER.indexOf(id) + 1) % ORDER.length]));
   }
 
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
