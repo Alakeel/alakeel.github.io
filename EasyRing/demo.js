@@ -1,5 +1,5 @@
 // The landing page's demo: a key opens its wheel (Shift: Convert, Command:
-// Tools, Control: Apps), the wheel picks an action and the card shows the result.
+// Tools, Fn: Apps), the wheel picks an action and the card shows the result.
 // The keys take turns every 2 seconds, each playing its wheel's next example;
 // clicking a key jumps to that wheel.
 (() => {
@@ -25,12 +25,12 @@
         { name: "photos", ext: "ZIP", from: "JPG", pick: "Zip", size: "12 files", out: "8.4 MB" },
       ],
     },
-    control: {
+    fn: {
       items: ["Browser", "Music", "Messages", "Terminal", "Mail", "Photos", "Notes", "Files"],
       steps: [{ app: true, pick: "Music" }, { app: true, pick: "Terminal" }],
     },
   };
-  const ORDER = ["shift", "command", "control"];
+  const ORDER = ["shift", "command", "fn"];
 
   // The ring: 8 segments with labels, and a hub that names the pick.
   const svg = stage.querySelector(".wheel");
@@ -110,7 +110,7 @@
   }
 
   // Each key plays its wheel's next example, then hands over to the next key.
-  const turn = { shift: 0, command: 0, control: 0 };
+  const turn = { shift: 0, command: 0, fn: 0 };
   function run(id) {
     timers.forEach(clearTimeout);
     timers = [];

@@ -2,6 +2,9 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
+<!-- Show the address without its trailing slash; the base keeps relative links resolving from this folder. -->
+<base href="/EasyRing/ar/">
+<script>if (location.pathname.endsWith("/") && location.pathname !== "/") history.replaceState(null, "", location.pathname.slice(0, -1) + location.search + location.hash);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EasyRing — حوّل واضغط وشغّل من حلقة واحدة</title>
 <meta name="description" content="حوّل واضغط وغيّر حجم أي ملف واقتصه بحركة واحدة من Finder. خصوصيتك أولًا: لا يُرفع أي شيء. قريبًا على Windows.">
@@ -24,6 +27,8 @@
     <div class="buttons">
       <a class="store-btn" href="https://apps.apple.com/app/id6824989710"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.6-1-2.6-3.9zM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>حمّله من App Store</a>
       <span class="store-btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.1 10.4 4v7.1H3zm8.3-1.2L21 2.5v8.6h-9.7zM3 12h7.4v7.1L3 18zm8.3 0H21v8.5l-9.7-1.4z"/></svg>Windows<em>قريبًا</em></span>
+      <span class="store-btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg>iOS<em>قريبًا</em></span>
+      <span class="store-btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22A11.4 11.4 0 0 0 12 8.08c-1.77 0-3.43.4-4.92 1.06L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>Android<em>قريبًا</em></span>
     </div>
     <span class="small">مجاني للصور وملفات PDF والمستندات · Pro يفتح الفيديو والصوت بشراء واحد</span>
   </div>
@@ -37,10 +42,10 @@
       <span class="fstate"></span>
     </div>
   </div>
-  <div class="keys"><button type="button" class="key" data-wheel="shift"><kbd><b>⇧</b>Shift</kbd><span>تحويل</span></button><button type="button" class="key" data-wheel="command"><kbd><b>⌘</b>Command</kbd><span>أدوات</span></button><button type="button" class="key" data-wheel="control"><kbd><b>⌃</b>Control</kbd><span>تطبيقات</span></button></div>
+  <div class="keys"><button type="button" class="key" data-wheel="shift"><kbd><b>⇧</b>Shift</kbd><span>تحويل</span></button><button type="button" class="key" data-wheel="command"><kbd><b>⌘</b>Command</kbd><span>أدوات</span></button><button type="button" class="key" data-wheel="fn"><kbd><b>🌐</b>Fn</kbd><span>تطبيقات</span></button></div>
   </div>
 </section>
-<ol class="how"><li><span class="step">1</span><h3>حدّد</h3><p>اختر ملفاتك في Finder أو مستكشف الملفات: ملفًا واحدًا أو مئة.</p></li><li><span class="step">2</span><h3>اضغط</h3><p>اضغط باستمرار على مفتاح مثل Shift أو Control، فتظهر العجلة تحت المؤشر.</p></li><li><span class="step">3</span><h3>أفلت</h3><p>أشر إلى ما تريد ثم أفلت. تظهر النتيجة بجانب الملف الأصلي.</p></li></ol>
+<ol class="how"><li><span class="step">1</span><h3>حدّد</h3><p>اختر ملفاتك في Finder أو مستكشف الملفات: ملفًا واحدًا أو مئة.</p></li><li><span class="step">2</span><h3>اضغط</h3><p>اضغط باستمرار على Shift أو Command أو Fn، فتظهر العجلة تحت المؤشر.</p></li><li><span class="step">3</span><h3>أفلت</h3><p>أشر إلى ما تريد ثم أفلت. تظهر النتيجة بجانب الملف الأصلي.</p></li></ol>
 <script>window.DEMO = {"converting": "جارٍ التحويل…", "working": "جارٍ التنفيذ…", "done": "تم الحفظ", "opening": "جارٍ الفتح…", "opened": "تم الفتح", "words": {"Compress": "ضغط", "Resize": "تحجيم", "Crop": "اقتصاص", "Rotate": "تدوير", "Flip": "قلب", "Metadata": "البيانات", "Zip": "أرشفة", "Rename": "تسمية", "Browser": "المتصفح", "Music": "الموسيقى", "Messages": "الرسائل", "Terminal": "الطرفية", "Mail": "البريد", "Photos": "الصور", "Notes": "الملاحظات", "Files": "الملفات"}};</script>
 <script src="../demo.js"></script>
 <footer><span>© 2026 EasyRing</span><a href="../ar/privacy/">الخصوصية</a><a href="../ar/support/">الدعم</a><a href="../ar/terms/">الشروط</a></footer>

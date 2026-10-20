@@ -300,8 +300,15 @@ body.landing footer { margin-top: 12px; padding: 10px 0 14px; font-size: 13px; }
   0% { transform: translateX(-150%) skewX(-20deg); }
   40%, 100% { transform: translateX(450%) skewX(-20deg); }
 }
-/* App Store button with the Windows one under it, both as wide as the wider. */
-.buttons { display: inline-grid; grid-template-columns: 1fr; gap: 10px; }
+/* App Store over Windows on the left, iOS over Android on the right; each
+   column as wide as its wider button. */
+.buttons { display: inline-grid; grid-template-rows: auto auto; grid-auto-flow: column; gap: 8px; }
+.buttons .store-btn { padding: 9px 14px; font-size: 13px; gap: 8px; }
+.buttons .store-btn svg { width: 17px; height: 17px; }
+.buttons .store-btn.soon em { font-size: 9px; padding: 2px 6px; }
+@media (max-width: 480px) {
+  .buttons { grid-auto-flow: row; }
+}
 .buttons .store-btn { justify-content: center; white-space: nowrap; }
 .store-btn.soon {
   background: rgba(255, 255, 255, 0.08);
