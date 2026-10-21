@@ -197,5 +197,7 @@ body.landing footer { margin-top: 12px; padding: 10px 0 14px; font-size: 13px; }
   .phone { width: min(300px, 76vw); }
 }
 @media (max-width: 560px) {
-  header.top nav { gap: 12px; font-size: 14px; }
+  /* Phones: the name on its own line, the links in a row under it. */
+  header.top { flex-wrap: wrap; row-gap: 10px; }
+  header.top nav { flex-basis: 100%; margin-inline-start: 0; gap: 18px; font-size: 15px; }
 }
