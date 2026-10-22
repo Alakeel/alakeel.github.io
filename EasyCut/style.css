@@ -19,11 +19,14 @@ a:hover { text-decoration: underline; }
 .glow.b { width: 420px; height: 420px; background: var(--pink); top: 30%; right: -160px; animation: drift 18s ease-in-out infinite alternate-reverse; }
 @keyframes drift { to { transform: translate(60px, 80px) scale(1.1); } }
 
-nav { display: flex; align-items: center; gap: 12px; padding: 18px 0; }
+nav { display: flex; align-items: center; gap: 28px; padding: 18px 0; }
 nav .brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 22px; color: #fff; letter-spacing: -0.5px; }
 nav .brand img { width: 36px; height: 36px; }
 nav .spacer { flex: 1; }
 nav a.link { color: var(--muted); font-weight: 600; font-size: 15px; }
+nav a.link:hover { color: #fff; text-decoration: none; }
+/* The language switch sits apart from the page links, after a thin divider. */
+nav a.link[lang] { padding-inline-start: 28px; border-inline-start: 1px solid var(--line); }
 
 .btn {
   display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 16px;
@@ -45,6 +48,9 @@ nav a.link { color: var(--muted); font-weight: 600; font-size: 15px; }
 .grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero p.lead { font-size: 20px; color: var(--muted); margin: 0 0 28px; max-width: 520px; }
 .hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+/* Two store buttons side by side, both as wide as the wider one. */
+.hero .ctas:has(.store) { display: inline-grid; grid-template-columns: 1fr 1fr; }
+.hero .ctas .store { justify-content: center; padding: 12px 18px; font-size: 15px; white-space: nowrap; }
 .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
 .pill { font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 99px; background: var(--card); border: 1px solid var(--line); color: var(--muted); }
 .video { position: relative; border-radius: 24px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 40px 80px rgba(0,0,0,.6); background: #000; aspect-ratio: 16 / 9; }
@@ -96,6 +102,8 @@ footer .spacer { flex: 1; }
 @media (max-width: 600px) {
   .grid, .steps { grid-template-columns: 1fr; }
   nav a.link.hide { display: none; }
+  nav { gap: 18px; }
+  nav a.link[lang] { padding-inline-start: 18px; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
@@ -120,3 +128,7 @@ footer .spacer { flex: 1; }
 [dir="rtl"] .open li::before { left: auto; right: 0; }
 [dir="rtl"] .glow.a { left: auto; right: -140px; }
 [dir="rtl"] .glow.b { right: auto; left: -160px; }
+@media (max-width: 520px) {
+  .hero .ctas:has(.store) { display: grid; }
+  .hero .ctas .store { flex-direction: column; gap: 6px; padding: 12px 10px; }
+}
