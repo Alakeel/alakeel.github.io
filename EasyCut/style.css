@@ -33,6 +33,12 @@ nav a.link { color: var(--muted); font-weight: 600; font-size: 15px; }
 .btn:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 16px 40px rgba(124,77,255,.45); }
 .btn.ghost { background: var(--card); box-shadow: none; border: 1px solid var(--line); }
 .btn svg { width: 20px; height: 20px; fill: currentColor; }
+/* Store buttons; "soon" ones are greyed out until the app is live. When it is, swap the span for <a class="btn store" href="https://apps.apple.com/app/id…">. */
+.btn.store.soon { background: var(--card); color: var(--muted); border: 1px solid var(--line); box-shadow: none; cursor: not-allowed; }
+.btn.store.soon:hover { transform: none; }
+.btn.store em { font-style: normal; font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; background: var(--ink); color: var(--lime); }
+[dir="rtl"] .btn.store em { letter-spacing: 0; font-size: 12px; }
+.video video { pointer-events: none; }
 
 .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; padding: 48px 0 72px; }
 .hero h1 { font-size: clamp(42px, 6vw, 76px); line-height: 1.02; letter-spacing: -2.5px; margin: 0 0 18px; font-weight: 900; }
@@ -104,3 +110,13 @@ footer .spacer { flex: 1; }
   .open { padding: 22px; }
   section { padding: 44px 0; }
 }
+
+/* Arabic pages (ar/): right to left, the system Arabic font, no negative tracking. */
+[dir="rtl"] body { font-family: -apple-system, "SF Arabic", "Segoe UI", Tahoma, sans-serif; }
+[dir="rtl"] .hero h1, [dir="rtl"] section h2, [dir="rtl"] .doc h1, [dir="rtl"] nav .brand { letter-spacing: 0; line-height: 1.25; }
+[dir="rtl"] .step { padding: 24px 76px 24px 24px; }
+[dir="rtl"] .step::before { left: auto; right: 22px; }
+[dir="rtl"] .open li { padding: 8px 30px 8px 0; }
+[dir="rtl"] .open li::before { left: auto; right: 0; }
+[dir="rtl"] .glow.a { left: auto; right: -140px; }
+[dir="rtl"] .glow.b { right: auto; left: -160px; }
