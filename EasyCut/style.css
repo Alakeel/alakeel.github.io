@@ -135,3 +135,11 @@ footer .spacer { flex: 1; }
 @media (max-width: 520px) {
   .hero .ctas .store { padding: 12px 10px; }
 }
+
+/* Support questions: tap a question to open its answer. */
+.doc details { border: 1px solid var(--line); border-radius: 16px; background: var(--panel); margin: 10px 0; }
+.doc details summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 700; display: flex; align-items: center; gap: 12px; }
+.doc details summary::-webkit-details-marker { display: none; }
+.doc details summary::after { content: "+"; margin-inline-start: auto; font-size: 22px; line-height: 1; color: var(--muted); transition: transform .2s ease; }
+.doc details[open] summary::after { transform: rotate(45deg); color: #fff; }
+.doc details p { margin: 0; padding: 0 20px 18px; color: var(--muted); }
