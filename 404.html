@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found</title>
+<meta name="robots" content="noindex">
+<script>
+  // Links typed in any case (apps.alakeel.net/easyplayer) go to the app's page
+  // (/EasyPlayer/): GitHub Pages paths are case-sensitive.
+  (function () {
+    var apps = {"easycut": "EasyCut", "easydownload": "EasyDownload", "easypair": "EasyPair", "easyplayer": "EasyPlayer", "easyring": "EasyRing", "easyscribe": "EasyScribe", "easytone": "EasyTone"};
+    var parts = location.pathname.split("/");
+    var app = apps[(parts[1] || "").toLowerCase()];
+    if (app && parts[1] !== app) {
+      parts[1] = app;
+      var path = parts.join("/");
+      if (parts.length === 2) path += "/";
+      location.replace(path + location.search + location.hash);
+    }
+  })();
+</script>
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<main style="max-width:640px;margin:15vh auto;padding:0 20px;text-align:center">
+  <h1>Page not found</h1>
+  <p><a href="/">See all apps</a></p>
+</main>
+</body>
+</html>
