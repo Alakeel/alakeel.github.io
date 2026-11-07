@@ -44,6 +44,10 @@ nav a.link[lang] { padding-inline-start: 28px; border-inline-start: 1px solid va
 .video video { pointer-events: none; }
 
 .hero { display: grid; grid-template-columns: 0.85fr 1.35fr; gap: 40px; align-items: center; padding: 48px 0 72px; }
+/* The first screen shows the hero alone; the next section starts below the fold. */
+.hero { min-height: calc(100vh - 72px); min-height: calc(100svh - 72px); align-content: center; }
+/* Phones: the menu wraps under the name, so the nav is about 120px tall. */
+@media (max-width: 600px) { .hero { min-height: calc(100vh - 120px); min-height: calc(100svh - 120px); } }
 .hero h1 { font-size: clamp(36px, 3.4vw, 50px); line-height: 1.08; letter-spacing: -2.5px; margin: 0 0 18px; font-weight: 900; }
 .grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero p.lead { font-size: 20px; color: var(--muted); margin: 0 0 28px; max-width: 520px; }

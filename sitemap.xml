@@ -295,115 +295,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyRing/terms/"/>
   </url>
   <url>
-    <loc>https://apps.alakeel.net/EasyScribe/</loc>
+    <loc>https://apps.alakeel.net/EasyRing/mobile/</loc>
     <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyScribe/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyScribe/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyScribe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyRing/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyRing/ar/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyRing/mobile/"/>
   </url>
   <url>
-    <loc>https://apps.alakeel.net/EasyScribe/ar/</loc>
+    <loc>https://apps.alakeel.net/EasyRing/ar/mobile/</loc>
     <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyScribe/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyScribe/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyScribe/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyScribe/privacy/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyScribe/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyScribe/ar/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyScribe/privacy/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyScribe/ar/privacy/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyScribe/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyScribe/ar/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyScribe/privacy/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyScribe/support/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyScribe/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyScribe/ar/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyScribe/support/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyScribe/ar/support/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyScribe/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyScribe/ar/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyScribe/support/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyScribe/terms/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyScribe/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyScribe/ar/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyScribe/terms/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyScribe/ar/terms/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyScribe/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyScribe/ar/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyScribe/terms/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyTone/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyTone/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyTone/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyTone/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyTone/ar/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyTone/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyTone/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyTone/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyTone/privacy/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyTone/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyTone/ar/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyTone/privacy/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyTone/ar/privacy/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyTone/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyTone/ar/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyTone/privacy/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyTone/support/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyTone/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyTone/ar/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyTone/support/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyTone/ar/support/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyTone/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyTone/ar/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyTone/support/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyTone/terms/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyTone/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyTone/ar/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyTone/terms/"/>
-  </url>
-  <url>
-    <loc>https://apps.alakeel.net/EasyTone/ar/terms/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyTone/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyTone/ar/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyTone/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyRing/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyRing/ar/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyRing/mobile/"/>
   </url>
 </urlset>

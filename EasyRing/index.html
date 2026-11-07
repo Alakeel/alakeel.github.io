@@ -6,50 +6,152 @@
 <base href="/EasyRing/">
 <script>if (location.pathname.endsWith("/") && location.pathname !== "/") history.replaceState(null, "", location.pathname.slice(0, -1) + location.search + location.hash);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EasyRing — convert, compress and launch from one ring</title>
-<meta name="description" content="Convert, compress, resize and crop any file with one gesture, right from Finder. Private by design: nothing is uploaded. Windows coming soon.">
+<title>EasyRing – File Converter &amp; Compressor for Mac</title>
+<meta name="description" content="EasyRing is a file converter for Mac: select files in Finder, hold a key and convert, compress, resize or crop images, PDFs, documents and video in place. Nothing is uploaded.">
+<link rel="canonical" href="https://apps.alakeel.net/EasyRing/">
+<link rel="alternate" hreflang="en" href="https://apps.alakeel.net/EasyRing/">
+<link rel="alternate" hreflang="ar" href="https://apps.alakeel.net/EasyRing/ar/">
+<link rel="alternate" hreflang="x-default" href="https://apps.alakeel.net/EasyRing/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="apple-itunes-app" content="app-id=6824989710">
+<meta property="og:site_name" content="EasyRing">
+<meta property="og:title" content="EasyRing – File Converter &amp; Compressor for Mac">
+<meta property="og:description" content="Hold a key, point, let go. Convert, compress, resize and crop any file right in Finder: HEIC to JPG, merge PDFs, shrink videos. Nothing is uploaded.">
+<meta property="og:url" content="https://apps.alakeel.net/EasyRing/">
+<meta property="og:image" content="https://apps.alakeel.net/EasyRing/assets/poster.jpg">
+<meta property="og:image:alt" content="EasyRing converting files in Finder on a Mac with its ring">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EasyRing – File Converter &amp; Compressor for Mac">
+<meta name="twitter:description" content="Hold a key, point, let go. Convert, compress, resize and crop any file right in Finder: HEIC to JPG, merge PDFs, shrink videos. Nothing is uploaded.">
+<meta name="twitter:image" content="https://apps.alakeel.net/EasyRing/assets/poster.jpg">
+<meta name="theme-color" content="#0B0618">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "EasyRing", "alternateName": ["Easy Ring", "easyring"], "description": "EasyRing is a file converter for Mac: select files in Finder, hold a key and convert, compress, resize or crop images, PDFs, documents and video in place. Nothing is uploaded.", "operatingSystem": "macOS", "applicationCategory": "UtilitiesApplication", "applicationSubCategory": "File converter", "inLanguage": ["en", "ar", "zh", "es", "pt", "hi", "ja", "de", "fr", "ko", "ru", "tr"], "url": "https://apps.alakeel.net/EasyRing/", "downloadUrl": "https://apps.apple.com/app/id6824989710", "installUrl": "https://apps.apple.com/app/id6824989710", "sameAs": ["https://apps.apple.com/app/id6824989710"], "image": "https://apps.alakeel.net/EasyRing/assets/icon.png", "screenshot": "https://apps.alakeel.net/EasyRing/assets/poster.jpg", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock"}, "author": {"@type": "Person", "name": "Abdullah Alakeel", "url": "https://apps.alakeel.net/"}}
+</script>
 </head>
-<body class="landing">
+<body>
+<div class="glow a"></div><div class="glow b"></div>
 <div class="wrap">
-<header class="top">
-  <a href="./"><img src="assets/icon.png" alt=""></a>
-  <a class="name" href="./">EasyRing</a>
-  <nav><a href="privacy/">Privacy</a><a href="support/">Support</a><a href="terms/">Terms</a><a href="ar/" lang="ar">العربية</a></nav>
-</header>
-<section class="hero">
-  <div class="hero-copy">
-    <span class="banner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.94 5.274A7 7 0 0 1 15.71 10h1.79a4.5 4.5 0 0 1 4.222 6.057"/><path d="M18.796 18.81A4.5 4.5 0 0 1 17.5 19H9A7 7 0 0 1 5.79 5.78"/><path d="m2 2 20 20"/></svg>No more uploading your files online to convert</span>
-    <h1>Convert. Compress. Launch.<br><span class="grad">All from one ring.</span></h1>
-    <ul class="points"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg><span>Convert PDFs, images, documents &amp; video</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/></svg><span>Compress, crop &amp; resize without opening an app</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg><span>Your favourite apps, one hold away</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></svg><span>Works offline. Your files never leave your Mac</span></li></ul>
-    <div class="buttons">
-      <a class="store-btn" href="https://apps.apple.com/app/id6824989710"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.6-1-2.6-3.9zM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>Download on the App Store</a>
-      <span class="store-btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.1 10.4 4v7.1H3zm8.3-1.2L21 2.5v8.6h-9.7zM3 12h7.4v7.1L3 18zm8.3 0H21v8.5l-9.7-1.4z"/></svg>Windows<em>Coming soon</em></span>
-      <span class="store-btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg>iOS<em>Coming soon</em></span>
-      <span class="store-btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22A11.4 11.4 0 0 0 12 8.08c-1.77 0-3.43.4-4.92 1.06L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>Android<em>Coming soon</em></span>
+  <nav>
+    <a class="brand" href="./"><img src="assets/icon.png" alt=""> EasyRing</a>
+    <span class="spacer"></span>
+    <a class="link hide" href="#features">Features</a>
+    <a class="link hide" href="#private">Privacy</a>
+    <a class="link" href="support/">Support</a>
+    <span class="switch" lang="en" dir="ltr"><a href="./" aria-current="page">Mac</a><a href="mobile/">iPhone</a></span>
+    <a class="link" href="ar/" lang="ar">العربية</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-text">
+      <span class="kicker">File converter for Mac</span>
+      <h1>Hold. Point. Let go.<br><span class="grad">Every file, one ring.</span></h1>
+      <p class="lead">Select files in Finder, hold a key and the ring appears right under your cursor. Point at what you want and let go: converted, compressed, resized or cropped in place, with nothing uploaded.</p>
+      <div class="ctas">
+        <a class="btn store" href="https://apps.apple.com/app/id6824989710"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.6-1-2.6-3.9zM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg><span class="label"><small>Download on the</small>App Store</span></a>
+        <a class="btn store ghost" href="mobile/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg><span class="label">iPhone &amp; iPad app</span></a>
+        <span class="btn store soon" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.1 10.4 4v7.1H3zm8.3-1.2L21 2.5v8.6h-9.7zM3 12h7.4v7.1L3 18zm8.3 0H21v8.5l-9.7-1.4z"/></svg><span class="label">Windows</span><em>Coming soon</em></span>
+      </div>
+      <!-- Pro is hidden for now: <p class="note">Free for images, PDFs and documents · Pro adds video &amp; audio, monthly or yearly</p> -->
+      <p class="note">Free to download · Images, PDFs, documents, video &amp; audio · 12 languages</p>
     </div>
-    <!-- Pro is hidden for now: <span class="small">Free for images, PDFs and documents · Pro adds video &amp; audio, monthly or yearly</span> -->
-    <span class="small">Free for images, PDFs, documents, video &amp; audio</span>
-  </div>
-  <div class="demo">
-  <div class="stage" aria-hidden="true">
-    <div class="tags"><span class="tag t0">JPG</span><span class="tag t1">PNG</span><span class="tag t2">WEBP</span><span class="tag t3">HEIC</span><span class="tag t4">PDF</span><span class="tag t5">DOCX</span><span class="tag t6">PPTX</span><span class="tag t7">MD</span><span class="tag t8">MP4</span><span class="tag t9">MOV</span><span class="tag t10">GIF</span><span class="tag t11">MP3</span><span class="tag t12">ZIP</span><span class="tag t13">TIFF</span></div>
-    <svg class="wheel" viewBox="0 0 400 400"></svg>
-    <div class="file" dir="ltr">
-      <div class="file-icon"><span class="ext"></span></div>
-      <div class="file-meta"><strong class="fname"></strong><span class="fsize"></span></div>
-      <span class="fstate"></span>
+    <div class="video">
+      <video aria-label="EasyRing converting files in Finder on a Mac with its ring" title="EasyRing converting files in Finder on a Mac with its ring" src="assets/promo.mp4" poster="assets/poster.jpg" autoplay muted loop playsinline disablepictureinpicture preload="metadata"></video>
     </div>
+  </header>
+
+  <section>
+    <div class="try">
+      <div>
+        <h2>Try the <span class="grad">ring</span></h2>
+        <p class="sub">Each key opens its own ring: Shift converts, Command opens the tools, Fn opens your apps.</p>
+        <p class="hint">Click a key to see its ring.</p>
+      </div>
+      <div class="demo">
+        <div class="stage" aria-hidden="true">
+          <div class="tags"><span class="tag t0">JPG</span><span class="tag t1">PNG</span><span class="tag t2">WEBP</span><span class="tag t3">HEIC</span><span class="tag t4">PDF</span><span class="tag t5">DOCX</span><span class="tag t6">PPTX</span><span class="tag t7">MD</span><span class="tag t8">MP4</span><span class="tag t9">MOV</span><span class="tag t10">GIF</span><span class="tag t11">MP3</span><span class="tag t12">ZIP</span><span class="tag t13">TIFF</span></div>
+          <svg class="wheel" viewBox="0 0 400 400"></svg>
+          <div class="file" dir="ltr">
+            <div class="file-icon"><span class="ext"></span></div>
+            <div class="file-meta"><strong class="fname"></strong><span class="fsize"></span></div>
+            <span class="fstate"></span>
+          </div>
+        </div>
+        <div class="keys"><button type="button" class="key" data-wheel="shift"><kbd><b>⇧</b>Shift</kbd><span>Convert</span></button><button type="button" class="key" data-wheel="command"><kbd><b>⌘</b>Command</kbd><span>Tools</span></button><button type="button" class="key" data-wheel="fn"><kbd><b>🌐</b>Fn</kbd><span>Apps</span></button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Convert. Compress. <span class="grad">Launch.</span></h2>
+    <p class="sub">Stop opening five apps to change one file.</p>
+    <div class="grid">
+      <div class="card"><div class="ic">🖼️</div><h3>Convert anything</h3><p>Images to JPG, PNG, WEBP, HEIC and PDF; PDFs and documents to Word, PowerPoint, Markdown and TXT. iPhone HEIC photos to JPG in one move.</p></div>
+      <div class="card"><div class="ic">🗜️</div><h3>Compress with a preview</h3><p>Light, Medium, Strong or your own setting. The expected size shows before you let go, so you know what you'll get.</p></div>
+      <div class="card"><div class="ic">✂️</div><h3>Tools where you are</h3><p>Resize, crop, rotate and flip, strip metadata before you share, zip and rename in batch. Custom… opens a live preview editor.</p></div>
+      <div class="card"><div class="ic">📄</div><h3>PDF Toys</h3><p>Merge, split, reorder, rotate, compress and lock PDFs, and drag pages between files with a live preview.</p></div>
+      <div class="card"><div class="ic">🎬</div><h3>Video and audio</h3><p>Trim on a precise timeline, compress, crop, resize and change speed, merge clips, extract audio and take snapshots. Convert to MP4, MOV, WEBM, GIF or MP3.</p></div>
+      <div class="card"><div class="ic">🚀</div><h3>Your apps, one hold away</h3><p>Put up to eight favourite apps on a ring and launch them from anywhere without touching the Dock.</p></div>
+      <div class="card"><div class="ic">📚</div><h3>One file or a hundred</h3><p>Every action works on a whole batch at once, and the result lands right next to the original.</p></div>
+      <div class="card"><div class="ic">⌨️</div><h3>Your own keys</h3><p>Shift, Command and Fn by default, or any shortcut you like, set in Settings.</p></div>
+      <div class="card"><div class="ic">🎨</div><h3>Yours</h3><p>Six themes, glass or solid, and 12 languages.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Three steps</h2>
+    <p class="sub">From a file to the result in under a second.</p>
+    <div class="steps">
+      <div class="step"><h3>Select</h3><p>Pick files in Finder: one, or a hundred.</p></div>
+      <div class="step"><h3>Hold</h3><p>Hold Shift, Command or Fn. The ring appears under your cursor.</p></div>
+      <div class="step"><h3>Let go</h3><p>Point at what you want and release. The result lands right next to the original.</p></div>
+    </div>
+  </section>
+
+  <section id="private">
+    <div class="open">
+      <div>
+        <h2>Private <span class="grad">by design</span></h2>
+        <p class="sub" style="margin:0">No more uploading your files online to convert them. Every conversion and edit happens on your Mac.</p>
+      </div>
+      <ul>
+        <li>Nothing is uploaded, ever</li>
+        <li>No account and no tracking</li>
+        <li>Works offline</li>
+        <li>Free to download</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 EasyRing</span>
+    <span class="spacer"></span>
+    <a href="privacy/">Privacy</a>
+    <a href="terms/">Terms</a>
+    <a href="support/">Support</a>
   </div>
-  <div class="keys"><button type="button" class="key" data-wheel="shift"><kbd><b>⇧</b>Shift</kbd><span>Convert</span></button><button type="button" class="key" data-wheel="command"><kbd><b>⌘</b>Command</kbd><span>Tools</span></button><button type="button" class="key" data-wheel="fn"><kbd><b>🌐</b>Fn</kbd><span>Apps</span></button></div>
-  </div>
-</section>
-<ol class="how"><li><span class="step">1</span><h3>Select</h3><p>Pick files in Finder or File Explorer: one, or a hundred.</p></li><li><span class="step">2</span><h3>Hold</h3><p>Hold Shift, Command or Fn. The wheel appears under your cursor.</p></li><li><span class="step">3</span><h3>Let go</h3><p>Point at what you want and release. The result lands right next to the original.</p></li></ol>
+</footer>
 <script>window.DEMO = {"converting": "Converting…", "working": "Working…", "done": "Saved", "opening": "Opening…", "opened": "Opened", "words": {}};</script>
 <script src="demo.js"></script>
-<footer><span>© 2026 EasyRing</span><a href="privacy/">Privacy</a><a href="support/">Support</a><a href="terms/">Terms</a></footer>
-</div>
+<script>
+  // Cards rise in as they scroll into view.
+  const io = new IntersectionObserver((entries) => entries.forEach((e) => {
+    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  }), { threshold: 0.15 });
+  document.querySelectorAll(".card").forEach((c, i) => { c.style.transitionDelay = (i % 3) * 80 + "ms"; io.observe(c); });
+  // In-page links scroll here (the base href would otherwise reload the page).
+  document.querySelectorAll('a[href^="#"]').forEach((a) => a.addEventListener("click", (e) => {
+    const target = document.querySelector(a.getAttribute("href"));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: "smooth" }); }
+  }));
+</script>
 </body>
 </html>
