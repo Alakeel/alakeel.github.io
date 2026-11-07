@@ -15,11 +15,6 @@ body {
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
-.glow { position: fixed; border-radius: 50%; filter: blur(80px); opacity: .22; pointer-events: none; z-index: -1; }
-.glow.a { width: 520px; height: 520px; background: var(--blue); top: -160px; left: -140px; animation: drift 14s ease-in-out infinite alternate; }
-.glow.b { width: 420px; height: 420px; background: var(--mint); top: 40%; right: -160px; animation: drift 18s ease-in-out infinite alternate-reverse; }
-.glow { opacity: .28; }
-@keyframes drift { to { transform: translate(60px, 80px) scale(1.1); } }
 
 nav { display: flex; align-items: center; gap: 28px; padding: 18px 0; }
 nav .brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 22px; color: var(--text); letter-spacing: -0.5px; }
@@ -74,5 +69,3 @@ footer .spacer { flex: 1; }
 /* Arabic (ar/): right to left, the system Arabic font, no negative tracking. */
 [dir="rtl"] body { font-family: -apple-system, "SF Arabic", "Segoe UI", Tahoma, sans-serif; }
 [dir="rtl"] .hero h1, [dir="rtl"] .app h2, [dir="rtl"] .apps-title, [dir="rtl"] nav .brand { letter-spacing: 0; line-height: 1.25; }
-[dir="rtl"] .glow.a { left: auto; right: -140px; }
-[dir="rtl"] .glow.b { right: auto; left: -160px; }
