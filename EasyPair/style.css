@@ -145,17 +145,15 @@ footer .spacer { flex: 1; }
 }
 
 /* Support questions: tap a question to open its answer. */
-.doc details, .faq details { border: 1px solid var(--line); border-radius: 16px; background: var(--panel); margin: 10px 0; }
-.doc details summary, .faq details summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 700; display: flex; align-items: center; gap: 12px; }
-.doc details summary::-webkit-details-marker, .faq details summary::-webkit-details-marker { display: none; }
-.doc details summary::after, .faq details summary::after { content: "+"; margin-inline-start: auto; font-size: 22px; line-height: 1; color: var(--muted); transition: transform .2s ease; }
-.doc details[open] summary::after, .faq details[open] summary::after { transform: rotate(45deg); color: #fff; }
-.doc details p, .faq details p { margin: 0; padding: 0 20px 18px; color: var(--muted); }
+.doc details { border: 1px solid var(--line); border-radius: 16px; background: var(--panel); margin: 10px 0; }
+.doc details summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 700; display: flex; align-items: center; gap: 12px; }
+.doc details summary::-webkit-details-marker { display: none; }
+.doc details summary::after { content: "+"; margin-inline-start: auto; font-size: 22px; line-height: 1; color: var(--muted); transition: transform .2s ease; }
+.doc details[open] summary::after { transform: rotate(45deg); color: #fff; }
+.doc details p { margin: 0; padding: 0 20px 18px; color: var(--muted); }
 
 /* Home page: the how-to cards two by two, and the short list of questions. */
 .grid.two { grid-template-columns: repeat(2, 1fr); }
-.faq { max-width: 760px; }
-.faq .more { color: var(--muted); margin-top: 18px; }
 @media (max-width: 600px) {
   .grid.two { grid-template-columns: 1fr; }
 }
