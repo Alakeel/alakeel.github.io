@@ -12,17 +12,17 @@
     shift: {
       items: ["JPG", "PNG", "WEBP", "HEIC", "PDF", "DOCX", "MP4", "GIF"],
       steps: [
-        { name: "holiday", ext: "HEIC", pick: "JPG", size: "4.2 MB", out: "1.1 MB" },
         { name: "report", ext: "PDF", pick: "DOCX", size: "2.4 MB", out: "380 KB" },
         { name: "clip", ext: "MOV", pick: "MP4", size: "120 MB", out: "18 MB" },
+        { name: "holiday", ext: "HEIC", pick: "JPG", size: "4.2 MB", out: "1.1 MB" },
       ],
     },
     command: {
-      items: ["Compress", "Resize", "Crop", "Rotate", "Flip", "Metadata", "Zip", "Rename"],
+      items: ["Compress", "Merge", "Split", "Trim", "Crop", "Resize", "Stamp", "Zip"],
       steps: [
-        { name: "photo", ext: "JPG", pick: "Compress", size: "4.2 MB", out: "1.3 MB" },
-        { name: "banner", ext: "PNG", pick: "Crop", size: "2400×1200", out: "1200×1200" },
-        { name: "photos", ext: "ZIP", from: "JPG", pick: "Zip", size: "12 files", out: "8.4 MB" },
+        { name: "scan", ext: "PDF", pick: "Compress", size: "24 MB", out: "3.1 MB" },
+        { name: "contract", ext: "PDF", pick: "Merge", size: "3 files", out: "1.8 MB" },
+        { name: "trip", ext: "MP4", pick: "Trim", size: "2:40", out: "0:30" },
       ],
     },
     fn: {

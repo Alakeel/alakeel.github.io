@@ -45,7 +45,7 @@ nav .switch a[aria-current="page"] { background: var(--grad); color: #1A0B2E; }
 .btn:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 16px 40px rgba(228,106,71,.45); }
 .btn.ghost { background: var(--card); box-shadow: none; border: 1px solid var(--line); }
 .btn svg { width: 20px; height: 20px; fill: currentColor; }
-/* Store buttons: the App Store one is live; "soon" ones are greyed out until their store has the app. */
+/* Store buttons: "soon" ones are greyed out until their store has the app (for now both are). */
 .btn.store.soon { background: var(--card); color: var(--muted); border: 1px solid var(--line); box-shadow: none; cursor: not-allowed; }
 .btn.store.soon:hover { transform: none; }
 .btn.store em { font-style: normal; font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; background: var(--ink); color: var(--mint); }
@@ -59,7 +59,7 @@ nav .switch a[aria-current="page"] { background: var(--grad); color: #1A0B2E; }
 .grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero p.lead { font-size: 20px; color: var(--muted); margin: 0 0 28px; max-width: 520px; }
 .hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
-/* The store buttons, one under the other, as wide as the text above them: App Store, then Google Play (coming soon). */
+/* The store buttons, one under the other, as wide as the text above them: App Store, then Google Play (both coming soon for now). */
 .hero .ctas { display: grid; grid-template-columns: 1fr; gap: 12px; max-width: 520px; }
 .hero > div { min-width: 0; }
 .hero .ctas .store { justify-content: center; padding: 12px 18px; font-size: 18px; white-space: nowrap; }

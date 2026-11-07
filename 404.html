@@ -9,7 +9,7 @@
   // Links typed in any case (apps.alakeel.net/easyplayer) go to the app's page
   // (/EasyPlayer/): GitHub Pages paths are case-sensitive.
   (function () {
-    var apps = {"easycut": "EasyCut", "easydownload": "EasyDownload", "easypair": "EasyPair", "easyplayer": "EasyPlayer", "easyring": "EasyRing", "easyscribe": "EasyScribe", "easytone": "EasyTone"};
+    var apps = {"easycut": "EasyCut", "easydownload": "EasyDownload", "easypair": "EasyPair", "easyplayer": "EasyPlayer", "easyring": "EasyRing"};
     var parts = location.pathname.split("/");
     var app = apps[(parts[1] || "").toLowerCase()];
     if (app && parts[1] !== app) {
